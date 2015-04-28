@@ -1,0 +1,124 @@
+/* ==========================================================================
+ 	Global
+   ========================================================================== */
+
+/* Hide Footer Header Icons (too large on ie8) */
+
+#search-icon,
+#contact-icon,
+#connect-icon {
+	display:none;
+}
+
+/* ==========================================================================
+ 	index.html
+   ========================================================================== */
+
+/* Make top bg image cover section */
+
+section#top {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/moving-couch.jpg', sizingMethod='scale');	
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/moving-couch.jpg',sizingMethod='scale')";
+}
+
+/* Make encyclopedia section bg img cover section */
+
+section#encyclopedia {
+	background-image:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/book-shelf.jpg', sizingMethod='scale');	
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/book-shelf.jpg',sizingMethod='scale')";	
+}
+
+/* ==========================================================================
+ 	housing-search.html
+   ========================================================================== */
+
+/* hide !ie radios */
+.radio-center {
+	display:none;
+ }
+
+ /* show !ie hidden radio buttons*/
+
+ #top-search .radio {
+	display:block;
+}
+
+ /* show hidden ie radios*/
+
+.ie-hide {
+	display:block;
+}
+
+/* vertical align ie radios middle */
+
+#search-left-col {
+	padding:45px 0px;
+}
+
+/* ==========================================================================
+ 	list.php
+   ========================================================================== */
+
+/* Fix - Rows with less info don't stretch to 100% width in ie */
+#results {
+	width:100%;
+}
+
+/* Fix - Make pagination, title, and table-results same width, and lined up */
+#list-page .row {
+	margin-left:0px;
+	margin-right:0px
+}
+
+/* ==========================================================================
+ 	Media Queries
+   ========================================================================== */
+
+@media (max-width: 991px) {
+	/* Reset fix styles above back to original styles (bug only occuring > 991px) */
+	#list-page .row {
+		margin-left:-15px;
+		margin-right:-15px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	/* INDEX.HTML - Remove padding and make features images smaller (too big on ie8) */
+
+	#features li img {
+		padding:0;
+		max-width:50%;
+		height:auto;
+	}
+}
+
+@media (max-width: 550px) {
+	
+	/* bg img too large, overlaps mobile nav menu on ie8 */
+
+	.js .slicknav_menu {
+		background-image:none;
+	}
+	
+	/* INDEX.HTML - Img originally too wide on ie8 */
+
+	#features-img {
+		max-width:300px;
+	}
+}
+
+	/* MAPPING.HTML - Google IW nth child work around on IE */
+
+@media (max-width: 460px) {
+	
+	.iw-basic-info li.ie-nth-child-even {
+		text-align:right;
+	}
+	
+	.iw-basic-info li.ie-nth-child-odd {
+		text-align:left;
+	}
+}
