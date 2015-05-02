@@ -513,7 +513,7 @@ ul#search-table li.search-bar-btn {
 
 #view-btn {
 	z-index:900;
-	top:10px;
+	top:20px;
 	left:100px;
 	position:relative;
 }
@@ -802,4 +802,264 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
 	}
 }
 
+/* ==========================================================================
+ 	property.php
+   ========================================================================== */
 
+ /* PHP INCLUDE property images >= 5
+   ========================================================================== */
+
+#property-page {
+	background-color:tan;
+}
+
+#top-imgs {
+	position:relative;
+	height:500px;
+	max-width:1700px;
+}
+
+#top-imgs img {
+	min-width:100%;
+	outline:1px solid #00ced1;
+}
+
+#img-middle {
+	height:500px;
+}
+
+.img-side {
+	height:250px;
+}
+
+ /* PHP INCLUDE property images = 1
+   ========================================================================== */
+
+#top-container {
+	position:relative;
+} 
+
+#main-photo {
+	display:block; 
+	margin:0 auto; 
+	max-height:400px;
+}
+
+ /* Top Images Overlay
+   ========================================================================== */
+
+.info-overlay {
+	width:100%;
+	height:100px;
+  	background-color: rgba(0,0,0,.7);	
+  	z-index:100;
+  	position:absolute;
+  	bottom:0;
+}
+
+#main-photo {
+	display:block; 
+	margin:0 auto; 
+	max-height:400px;
+}
+
+#overlay-tbl {
+	display:table; 
+	height:100px;
+}
+
+.overlay-text {
+	vertical-align:middle; 
+	display:table-cell; 
+	height:100%; 
+	float:none;
+	font-weight:400;
+	font-size:1.3em;
+	color:white;
+}
+
+.button {
+	margin-top:0px;
+}
+
+.overlay-btn {
+	display:table-cell; 
+	vertical-align:middle; 
+	float:none;
+}
+
+.info-overlay .glyphicon {
+	color:#00ced1;
+}
+
+ /* Section #property-info
+   ========================================================================== */
+
+.title-box {
+	color: white;
+	background-color: #00ced1;
+	box-shadow: 10px 10px 5px white;
+	font-size: 1.9em;
+	text-align: center;
+	font-weight: 700;
+	padding: 5px 0 5px 0;
+	float:none;
+	margin-bottom:30px;
+}
+
+#at-a-glance,
+.property-about {
+	font-size:1.1em;
+}
+
+ul#basic-info li {
+	width:50%;
+	float:left;
+}
+
+ /* Section #link-boxes
+   ========================================================================== */
+
+#link-boxes {
+	padding:0 0 75px 0px;
+}
+
+#link-boxes hr {
+	margin-bottom:50px; 
+	margin-top:0px
+}
+
+ul#property-boxes li {
+	border-radius: 50px;
+	background-size: 100% 100%;
+	background-position:center;
+	background-repeat:no-repeat;
+	height: 300px;
+	margin:0 2% 0 2%;
+	width:29.3333%;
+	opacity:.8;
+	border:2px solid black;
+}
+
+	ul#property-boxes li:hover {
+		opacity:1;
+  		box-shadow:5px 5px 30px 15px black; 
+	}
+
+
+ul#property-boxes span.glyphicon {
+	font-size:3em; 
+	display:block; 
+	text-align:center;
+}
+
+#amenities-box {
+  background-image: url('../img/pool.jpg');
+}
+
+#map-box {
+  background-image: url('../img/map.jpg');
+}
+
+.box-list-title {
+  text-align: center;
+  margin-top: 25%;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color:gray;
+  background-color: rgba(0,0,0,.7);
+  color: white;
+  font-size: 2em;
+}
+
+.f-left {
+	width:50%;
+	float:left;
+}
+
+/* Media Queries
+   ========================================================================== */
+
+@media (max-width: 1199px) {
+
+	#top-imgs {
+		height:400px;
+	}
+
+	#img-middle {
+		height:400px;
+	}
+
+	.img-side {
+		height:200px;
+	}
+}
+
+@media (max-width: 991px) {
+
+	#top-imgs {
+		height:350px;
+	}
+
+	#img-middle {
+		height:350px;
+	}
+
+	.img-side {
+		height:175px;
+	}
+
+	ul#property-boxes li {
+		height:220px;
+	}
+
+@media (max-width: 767px) {
+
+	#img-middle {
+		height:280px;
+		width:auto;
+		max-width:auto;
+	}
+
+	#top-imgs img {
+		min-width:inherit;
+		display:block;
+		margin:0 auto;
+	}
+
+	#middle-img-wrapper {
+		float:none;
+	}
+
+	#top-imgs {
+		height:auto;
+	}
+
+	.overlay-text {
+		font-size:.9em;
+	}
+
+	.overlay-btn .button {
+		font-size:.9em;
+		min-width:70px;
+		padding:0px 5px;
+	}
+
+	.info-overlay,
+	#overlay-tbl {
+		height:80px;
+		width:100%;
+	}
+
+	.property-about{
+		margin-top:50px;
+	}
+}
+
+@media (min-width: 450px) and (max-width: 767px) {
+
+	ul#basic-info li {
+		padding-left:10%;
+	}
+}

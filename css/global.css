@@ -115,6 +115,11 @@ footer {
 	margin-bottom:5px;
 }
 
+.margin-vert-10{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
 .margin-hor-5 {
 	margin-right:5px;
 	margin-left:5px;
@@ -123,6 +128,10 @@ footer {
 .margin-hor-10 {
 	margin-right:10px;
 	margin-left:10px;
+}
+
+.pad-0 {
+	padding:0px;
 }
 
 .pad-vert-5 {

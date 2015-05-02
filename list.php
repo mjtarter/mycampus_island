@@ -212,7 +212,7 @@
 				<div class='col-xs-12 col-md-6 pad-vert-10 results-col'>
 					<div class='text-center'>
 						<span class='glyphicon glyphicon-map-marker' style='color:" . iconColor($type) . "'></span>
-						<strong><a target = '_blank' href='http://www.mycampusisland.com/property-page-NEW.php?id=".$id."'>$apt_name $address</a></strong>
+						<strong><a target = '_blank' href='property.php?id=".$id."'>$apt_name $address</a></strong>
 					</div>
 					<p class='no-margin' id='description'>$Description</p>
 					<p class='text-center no-margin'>
