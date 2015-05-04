@@ -53,10 +53,10 @@
         	<div class="container">
         		<div id="logo"><img src="img/mci-logo.png" alt="MyCampus Island logo"><p class="text-center" id="logo-text">The Collegiate Reference For Housing</p></div>
                 <ul id="menu">
-                	<li><a href="location.php?id=<?php $id = $field_db['id']; echo $id; ?>">Location</a></li>
-		            <li><a href="amenities.php?id=<?php $id = $field_db['id']; echo $id; ?>">Amenities</a></li>
-		            <li><a href="gallery.php?id=<?php $id = $field_db['id']; echo $id; ?>">Gallery</a></li>
 		        	<li><a href="#">Basic Info</a></li>
+		            <li><a href="gallery.php?id=<?php $id = $field_db['id']; echo $id; ?>">Gallery</a></li>
+		            <li><a href="amenities.php?id=<?php $id = $field_db['id']; echo $id; ?>">Amenities</a></li>
+                	<li><a href="location.php?id=<?php $id = $field_db['id']; echo $id; ?>">Location</a></li>
                 </ul>
             </div>
         </nav>
