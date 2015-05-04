@@ -878,7 +878,7 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
 	color:white;
 }
 
-.button {
+#property-page .button {
 	margin-top:0px;
 }
 
