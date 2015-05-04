@@ -817,6 +817,7 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
 	position:relative;
 	height:500px;
 	max-width:1700px;
+	margin:0 auto;
 }
 
 #top-imgs img {
