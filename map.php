@@ -13,7 +13,7 @@ return $xmlStr;
 } 
 
 // Select all the rows in the markers table
-$query = "select * from markers where type LIKE '%e%' and ((0 >= Price and 0 <= Price_Two) or (10000 >= Price and 10000 <= Price_Two) or (0 <= Price and 10000 >= Price)) and (Available = 'yes' or Available = 'no')";
+$query = "select * from markers where type LIKE '%apartment%' and ((0 >= Price and 0 <= Price_Two) or (10000 >= Price and 10000 <= Price_Two) or (0 <= Price and 10000 >= Price)) and (Available = 'yes' or Available = 'no')";
 $result = mysql_query($query);
 if (!$result) {
   die('Invalid query: ' . mysql_error());

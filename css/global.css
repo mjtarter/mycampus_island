@@ -150,6 +150,11 @@ footer {
 	padding-bottom:15px;
 }
 
+.pad-vert-20 {
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
 .pad-hor-5 {
 	padding:0px 5px;
 }

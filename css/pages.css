@@ -809,7 +809,7 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
  /* PHP INCLUDE property images >= 5
    ========================================================================== */
 
-#property-page, #gallery-page, #housing-search-page {
+#property-page, #gallery-page, #housing-search-page, #amenities-page {
 	background-color:tan;
 }
 
@@ -1093,3 +1093,45 @@ ul#property-boxes span.glyphicon {
 		height:inherit;
 	}
 }
+
+/* ==========================================================================
+ 	amenities.php
+   ========================================================================== */
+
+ul.amenities-list li {
+	width:50%;
+	float:left;
+	padding:5px 0px;
+}
+
+ul.utilities-list {
+	width:50%;
+	float:left;
+}
+
+ul.utilities-list li {
+	padding:5px 0px;
+}
+
+.amenities {
+	padding:20px 0px;
+}
+
+/* Media Queries
+   ========================================================================== */
+
+@media (min-width: 450px) and (max-width: 767px) {
+
+	ul.amenities-list li {
+		padding-left:10%;
+	}
+
+	ul.utilities-list li {
+		padding-left:20%;
+	}
+}
+
+
+
+
+
