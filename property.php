@@ -171,7 +171,6 @@
 		</section>
 	</div> <!-- End Sticky Footer Page Wrap !-->
 
-
         <footer class="site-footer">
         	<div class="container">
             	<img class="img-center" src="img/mci-logo.png" alt="MyCampus Island logo">
