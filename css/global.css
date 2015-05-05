@@ -81,6 +81,7 @@ footer {
 	background-color:#0099ff;
 	border-top:3px solid black;
 	padding:1em 0 0 0;
+	position:relative;
 }
 
 	footer a {
@@ -254,8 +255,35 @@ ul#share-buttons li {
 	padding:7px 0;
 	border-top:2px solid white;
 	font-size:.8em;
+	position:absolute;
+	bottom:0;
+	z-index:10;
 }
 
+/*XXXXXXXXXX Sticky Footer XXXXXXXXXX*/
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -265px; 
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.site-footer, .page-wrap:after {
+  height: 265px; 
+}
 	
 /* ==========================================================================
    Media Queries

@@ -49,6 +49,8 @@
     	
     	<!--[if lte IE 7]><script src="js/ie6/warning.js"></script><script>window.onload=function(){e("js/ie6/")}</script><![endif]-->
         
+	<div class="page-wrap"> <!-- Wrapper for sticky footer !-->
+
         <nav id="main-nav">
         	<div class="container">
         		<div id="logo"><img src="img/mci-logo.png" alt="MyCampus Island logo"><p class="text-center" id="logo-text">The Collegiate Reference For Housing</p></div>
@@ -167,8 +169,10 @@
 	    		</a>	    	
 	    	</ul>
 		</section>
+	</div> <!-- End Sticky Footer Page Wrap !-->
 
-        <footer>
+
+        <footer class="site-footer">
         	<div class="container">
             	<img class="img-center" src="img/mci-logo.png" alt="MyCampus Island logo">
                 <hr>
