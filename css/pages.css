@@ -809,7 +809,7 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
  /* PHP INCLUDE property images >= 5
    ========================================================================== */
 
-#property-page {
+#property-page, #gallery-page {
 	background-color:tan;
 }
 
@@ -1014,6 +1014,7 @@ ul#property-boxes span.glyphicon {
 	ul#property-boxes li {
 		height:220px;
 	}
+}
 
 @media (max-width: 767px) {
 
@@ -1062,5 +1063,33 @@ ul#property-boxes span.glyphicon {
 
 	ul#basic-info li {
 		padding-left:10%;
+	}
+}
+
+/* ==========================================================================
+ 	gallery.php
+   ========================================================================== */
+
+.item img {
+	margin:0 auto;
+	max-height:480px;
+	min-height:380px;
+}
+
+.item {
+	height:480px;
+}
+
+/* Media Queries
+   ========================================================================== */
+
+@media (max-width: 767px) {
+
+	.item img {
+		min-height:inherit;
+	}
+
+	.item {
+		height:inherit;
 	}
 }
