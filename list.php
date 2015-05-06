@@ -108,7 +108,7 @@
             <ul class="container text-center" id="search-table">
                 <div class="row no-margin">
                     <li id="search-bar-radio">
-                        <form action="mapping.php" method="GET">
+                        <form action="list.php" method="GET">
                             <p class="no-margin"><input type="radio" name="housing_availability" checked="checked" value="no"> Encyclopedia <abbr class="hidden-xs" title="All housing in the database, whether listed as currently available or not."><img src="img/icon-tooltip.png" height="16"></abbr></p>
                             <p class="no-margin"><input type="radio" name="housing_availability" value="yes"> Listings <abbr class="hidden-xs" title="Housing that is listed as available for the current semester."><img src="img/icon-tooltip.png" height="16"> </abbr></p>
                     </li>
@@ -180,11 +180,11 @@
 
 			function iconColor ($type) {
 				if ($type == "house") {
-					return "#8080E6";
-				} else if ($type == "apartment") {
+					return "#00CED1";
+				} else if ($type == "apartment" or $type == "apartment, townhome") {
 					return "#D2B48C";
 				} else if ($type == "townhome") {
-					return "#00ced1";
+					return "#8080E6";
 				}
 			}
 

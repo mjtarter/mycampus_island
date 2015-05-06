@@ -2,7 +2,7 @@
 	
 		var customIcons = {
 		  house: {
-			icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=|8080E6|000000',
+			icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=|00CED1|000000',
 			shadow: 'http://labs.google.com/ridefinder/images/mm_20_shadow.png'
 		  },
 		  apartment: {
@@ -10,7 +10,7 @@
 			shadow: 'http://labs.google.com/ridefinder/images/mm_20_shadow.png'
 		  },
 		  townhome: {
-			icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=|00CED1|000000',
+			icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=|8080E6|000000',
 			shadow: 'http://labs.google.com/ridefinder/images/mm_20_shadow.png'
 		  },
 		  "apartment, townhome": {
