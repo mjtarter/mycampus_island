@@ -13,8 +13,8 @@
 			icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=|00CED1|000000',
 			shadow: 'http://labs.google.com/ridefinder/images/mm_20_shadow.png'
 		  },
-		  current_property: {
-			icon: 'http://maps.google.com/mapfiles/ms/icons/grn-pushpin.png',
+		  "apartment, townhome": {
+			icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=|D2B48C|000000',
 			shadow: 'http://labs.google.com/ridefinder/images/mm_20_shadow.png'
 		  }
 		};
