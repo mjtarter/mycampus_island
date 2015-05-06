@@ -50,7 +50,7 @@
             if ($field_db['on-site-maintenance'] == "Y") {
                 echo '<span class="glyphicon glyphicon-ok-circle" style="color:green"></span>';} else {
                 echo '<span class="glyphicon glyphicon-remove-circle" style="color:red"></span>';
-            }?> Onsite Maintenance
+            }?> On-site Maintenance
         </li>   
         <li style="<?php if ($field_db['courtyard'] == "N") {echo "color:#989898;";} ?>">
             <?php 

@@ -524,6 +524,7 @@ ul#search-table li.search-bar-btn {
 #map {
 	width:100%; 
 	height:100%; 
+	min-width:320px;
 	overflow:hidden;
 	position:absolute;
 }
@@ -1129,6 +1130,18 @@ ul.utilities-list li {
 	ul.utilities-list li {
 		padding-left:20%;
 	}
+}
+
+/* ==========================================================================
+ 	location.php
+   ========================================================================== */
+
+#location {
+	width:100%;
+	height:100%;
+	min-width:320px; 
+	min-height:350px; 
+	overflow:hidden;
 }
 
 
