@@ -24,6 +24,7 @@ while ($row = @mysql_fetch_assoc($result)){
   echo 'lng="' . $row['lng'] . '" ';
   echo 'type="' . $row['type'] . '" ';
   echo 'Price="' . parseToXML($row['Price']) . '" ';
+  echo 'Price_Two="' . parseToXML($row['Price_Two']) . '" ';
   echo 'sqft="' . parseToXML($row['sqft']) . '" ';
   echo 'floors="' . parseToXML($row['floors']) . '" ';
   echo 'property_manager="' . parseToXML($row['property_manager']) . '" ';

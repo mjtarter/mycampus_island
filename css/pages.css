@@ -605,8 +605,10 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
 }
 
 .iw-basic-info li {
-	width:33.333%; 
+	width:33.333%;
+	max-width:100px;
 	float:left;
+	padding:3px 0px;
 }
 
 /* Media Queries
@@ -648,14 +650,16 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
 
 	.iw-basic-info li {
 		width:50%; 
+		max-width:150px;
 	}
 
 	.iw-basic-info li:nth-child(even) {
-    	text-align:right;
+    	text-align:center;
 	}
 
 	.iw-basic-info li:nth-child(odd) {
-	    text-align:left;
+	    text-align:center;
+	    clear:both;
 	}
 
 	.iw-basic-info {
