@@ -2,7 +2,7 @@
 
 		var customIcons = {
 		  house: {
-			icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=|8080E6|000000',
+			icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=|00CED1|000000',
 			shadow: 'http://labs.google.com/ridefinder/images/mm_20_shadow.png'
 		  },
 		  apartment: {
@@ -10,7 +10,7 @@
 			shadow: 'http://labs.google.com/ridefinder/images/mm_20_shadow.png'
 		  },
 		  townhome: {
-			icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=|00CED1|000000',
+			icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=|8080E6|000000',
 			shadow: 'http://labs.google.com/ridefinder/images/mm_20_shadow.png'
 		  },
 		  "apartment, townhome": {
@@ -25,6 +25,16 @@
 			zoom: 17,
 			mapTypeId: 'roadmap'
 		  });
+
+		//Add price range to IW when applicable
+		function Real_Price(Price_Two) {
+			  
+			if (Price_Two !== "") {
+				return ' - ' + Price_Two } else {
+					return ''
+				};
+			};
+
 		  var infoWindow = new google.maps.InfoWindow;
 			  closeBoxMargin: "12px 4px 2px 2px"
 
@@ -44,6 +54,7 @@
 			  var address = markers[i].getAttribute("address");
 			  var type = markers[i].getAttribute("type");
 			  var Price = markers[i].getAttribute("Price");
+			  var Price_Two = markers[i].getAttribute("Price_Two");
 			  var sqft = markers[i].getAttribute("sqft");
 			  var floors = markers[i].getAttribute("floors");
 			  var property_manager = markers[i].getAttribute("property_manager");
@@ -52,7 +63,7 @@
 				  parseFloat(markers[i].getAttribute("lng")));
 			  var html = '<div id="img-container">' + 
 			  				'<img src="img/icon-marker.png" class="pad-hor-5" height=10>' +
-			  				'<strong>' + address + '<span class="pull-right pad-hor-5"> $' + Price + '</span>' + "</strong> <br/>" + 
+			  				'<strong>' + address + '<span class="pull-right pad-hor-5"> $' + Price + Real_Price(Price_Two) + '</span>' + "</strong> <br/>" + 
 			  				'<img src="Photos/' + id + '.jpg" id="gmap-iw-img">' + 
 			  				'<div id="iw-overlay">' + 
 			  					'<table class="text-center" id="iw-overlay-table">' +
@@ -64,11 +75,11 @@
 			  				'</div>' + 
 			  			'</div>' +
 		  				'<ul class="pad-vert-5 iw-basic-info clearfix">' + 
-		  					'<li class="ie-nth-child-odd">Bedrooms: ' + bdrms + '</li>' + 
-		  					'<li class="text-center ie-nth-child-even"> Baths: ' + bath + '</li>' + 
-		  					'<li class="text-right ie-nth-child-odd">Type: ' + type +'</li>' +
-		  					'<li class="ie-nth-child-even">Sqft: ' + sqft + '</li>' + 
-		  					'<li class="text-center ie-nth-child-odd"> Floors: ' + floors + '</li>' +
+		  					'<li class="ie-nth-child-odd"><strong>Bedrooms:</strong><br>' + bdrms + '</li>' + 
+		  					'<li class="text-center ie-nth-child-even"><strong>Baths:</strong><br>' + bath + '</li>' + 
+		  					'<li class="text-right ie-nth-child-odd"><strong>Type:</strong><br>' + type +'</li>' +
+		  					'<li class="ie-nth-child-even"><strong>Sqft:</strong><br>' + sqft + '</li>' + 
+		  					'<li class="text-center ie-nth-child-odd"><strong>Floors:</strong><br>' + floors + '</li>' +
 		  					'<li class="text-right ie-nth-child-even"></li>' +
 		  				'</ul>' +
 		  				'<a href=property-page-NEW.php?id=' + id  + ' target=_blank; class="button blue-button" id="listing-btn"><strong>View Listing</strong></a>' 

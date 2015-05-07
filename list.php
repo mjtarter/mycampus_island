@@ -125,7 +125,7 @@
                         <p class="no-margin">Bedrooms:</p>
                         <select name="number_bdrms" class="form-box">
                             <option value="All">Any</option>
-                            <option value="studio"> Studio</option>
+                            <option value="S"> Studio</option>
                             <option value="1"> 1</option>
                             <option value="2"> 2</option>
                             <option value="3"> 3</option>
