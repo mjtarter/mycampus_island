@@ -30,7 +30,7 @@
 		function Real_Price(Price_Two) {
 			  
 			if (Price_Two !== "") {
-				return ' - ' + Price_Two } else {
+				return ' - $' + Price_Two } else {
 					return ''
 				};
 			};
