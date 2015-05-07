@@ -62,12 +62,12 @@
 
         <section class="container">
     		<?php 
-	    		if ($field_db['type'] == "apartment") {
+	    		if ($field_db['type'] == "apartment" or $field_db['type'] == "apartment, townhome") {
 					include ('inc/community-features.php') 
 				;}
 				include ('inc/unit-features.php'); 
 				include ('inc/additional-features.php'); 
-				if ($field_db['type'] == "apartment") {
+                if ($field_db['type'] == "apartment" or $field_db['type'] == "apartment, townhome") {
 					include ('inc/utilities.php') 
 				;}
 			?>  	

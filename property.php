@@ -77,12 +77,16 @@
 				<div class="container" id="overlay-tbl">
 					<div class="col-xs-8 col-md-6 col-lg-5 col-lg-offset-1 overlay-text">
 						<span class="glyphicon glyphicon-map-marker pad-hor-5" aria-hidden="true"></span> <?php echo $field_db['address']; ?><span class="hidden-xs">, Bloomington, IN</span>
-						<br><span class="glyphicon glyphicon-home pad-hor-5" aria-hidden="true"></span> Availability: Unknown
-						<br><span class="glyphicon glyphicon-hand-right pad-hor-5" aria-hidden="true"></span> Personalized Grade: A-
+						<br><span class="glyphicon glyphicon-home pad-hor-5" aria-hidden="true"></span> Available: <?php echo $field_db['Available']; ?>
+						<abbr title="Availability for upcoming school year">
+							<span class="glyphicon glyphicon-info-sign" style="color:white"></span> 
+						</abbr> 
 					</div>
 					<div class="col-md-4 col-lg-3 text-right hidden-sm hidden-xs overlay-text">
 						<p class="no-margin">
-							<?php  echo  $field_db['property_manager'] . '<br>' . $field_db['phone'];?> 
+							<?php  if ($field_db['property_manager'] !== "") {
+								echo  $field_db['property_manager'] . '<br>';
+							} echo $field_db['phone'];?> 
 						</p>
 					</div>					
 					<div class="col-xs-4 col-md-2 col-lg-offset-1 text-right overlay-btn">
@@ -99,21 +103,21 @@
 						<p class="no-margin">AT A GLANCE</p>
 					</div>
 					<ul id="basic-info" class="col-lg-10 col-lg-offset-1 clearfix">
-						<li>Rent (Total)</li>
+						<li>Rent (Total):</li>
 						<li>
 							$<?php if ($field_db['Price_Two'] == "") {echo $field_db['Price'];} else {
-                				echo $field_db['Price']." - " . $field_db['Price_Two'];
+                				echo $field_db['Price']." - $" . $field_db['Price_Two'];
                 			}?>
                 		</li>
-						<li>Rent (Per Person)</li>
-						<li>$<?php echo round($field_db['Price'] / $field_db['bdrms'], 2); ?></li>
-						<li>Type</li>
+						<li><?php if ($field_db['Price_Two'] == "") {echo "Rent (Per Person):</li>
+						<li>$" . round($field_db['Price'] / $field_db['bdrms'], 2);} ?></li>
+						<li>Type:</li>
 						<li><?php echo $field_db['type'];?></li>
-						<li>Availability</li>
+						<li>Available:</li>
 						<li><?php echo $field_db['Available']; ?></li>
-						<li>Bedrooms</li>
+						<li>Bedrooms:</li>
 						<li><?php echo $field_db['bdrms']; ?></li>
-						<li>Bathrooms</li>
+						<li>Bathrooms:</li>
 						<li><?php echo $field_db['bath']; ?></li>
 						<?php 
 						if ($field_db['sqft'] !== "") { 
@@ -124,7 +128,7 @@
 						<?php 
 						if ($field_db['floors'] !== "") { 
 							echo 
-							'<li>Floors</li>
+							'<li>Floors:</li>
 							<li>' . $field_db['floors'] . '</li>';
 						}?>
 						<?php 

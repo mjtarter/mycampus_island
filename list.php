@@ -186,6 +186,11 @@
 				} else if ($type == "townhome") {
 					return "#8080E6";
 				}
+			};
+
+			function priceRange ($Price_Two) {
+				if ($Price_Two !== "") {
+					return " - " . $Price_Two;				}
 			}
 
 			while ($newArray = mysql_fetch_array($result)) {
@@ -203,6 +208,7 @@
 			$Description  = $newArray['Description'];
 			$Available  = $newArray['Available'];
 			$apt_name = $newArray['apt_name'];
+
 
 		echo "<div class='row' id='results'>\n";
 			echo 
@@ -222,7 +228,7 @@
 				</div>\n
 				<ul class='col-xs-12 col-md-2 results-col pad-vert-10' id='basic-info-list'>
 					<li><span class='glyphicon glyphicon-chevron-right' style='color:" . iconColor($type) . "'></span>&nbsp;&nbsp;<strong>$type</strong></li>
-					<li><span class='glyphicon glyphicon-chevron-right' style='color:" . iconColor($type) . "'></span>&nbsp;&nbsp;<strong>$$Price</strong></li>  
+					<li><span class='glyphicon glyphicon-chevron-right' style='color:" . iconColor($type) . "'></span>&nbsp;&nbsp;<strong>$$Price" . priceRange($Price_Two) . "</strong></li>  
 					<li><span class='glyphicon glyphicon-chevron-right' style='color:" . iconColor($type) . "'></span>&nbsp;&nbsp;<strong>$bath Baths</strong></li>
 					<li><span class='glyphicon glyphicon-chevron-right' style='color:" . iconColor($type) . "'></span>&nbsp;&nbsp;<strong>$bdrms Bedrooms</strong></li>
 				</ul>\n	
