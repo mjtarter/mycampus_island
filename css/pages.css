@@ -1148,6 +1148,96 @@ ul.utilities-list li {
 	overflow:hidden;
 }
 
+/* ==========================================================================
+ 	dorms.html
+   ========================================================================== */
+
+#dorm-map {
+	width:100%;
+	height:500px;
+}
+
+.neighborhood-title {
+	font-size:28px;
+}
+
+#northwest {
+	background-image: url('../img/water-blue-bg.png');
+}
+
+#central {
+	background-image: url('../img/tan-background.png');
+}
+
+#southeast {
+	background-image: url('../img/blue-background.png');
+}
+
+#northwest a,
+#central a,
+#southeast a {
+	text-decoration:underline;
+}
+
+#northwest img, 
+#central img,
+#southeast img {
+	max-height:300px;
+}
+
+#northwest .glyphicon-ok-circle,
+#central .glyphicon-ok-circle,
+#southeast .glyphicon-ok-circle {
+	color:green;
+}
+
+#northwest .glyphicon-remove-circle,
+#central .glyphicon-remove-circle,
+#southeast .glyphicon-remove-circle {
+	color:red;
+}
+
+.pros {
+	clear:both;
+}
+
+.dorms ul li {
+	width:50%;
+	float:left;
+}
+
+@media (max-width: 767px) {
+
+	.dorm-desc {
+		padding-top:15px;
+	}
+}
+
+@media (min-width: 451px) and (max-width: 767px) {
+
+	.dorms {
+		width:80%;
+		margin:0 auto;
+		clear:both;
+	}
+
+	.dorms ul li {
+		width:25%;
+	}
+
+	.pros, .cons {
+		width:50%;
+		float:left;
+	}
+}
+
+@media (max-width: 450px) {
+
+	.pros, .cons, .dorms {
+		width:100%;
+	}
+}
+
 
 
 

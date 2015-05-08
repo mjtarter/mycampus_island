@@ -64,7 +64,7 @@
 			  var html = '<div id="img-container">' + 
 			  				'<img src="img/icon-marker.png" class="pad-hor-5" height=10>' +
 			  				'<strong>' + address + '<span class="pull-right pad-hor-5"> $' + Price + Real_Price(Price_Two) + '</span>' + "</strong> <br/>" + 
-			  				'<img src="Photos/' + id + '.jpg" id="gmap-iw-img">' + 
+			  				'<img src="photos/' + id + '.jpg" id="gmap-iw-img">' + 
 			  				'<div id="iw-overlay">' + 
 			  					'<table class="text-center" id="iw-overlay-table">' +
 			  						'<tr>' +

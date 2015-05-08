@@ -1,0 +1,230 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Student Housing | Dorms | Indiana University</title>
+        <meta name="description" content="In depth information about Indiana University's dorms. View dorm tours, amenities, pros/cons, prices, student perspectives and much more!">         
+        <meta property="og:description" content="Discover everything you need to know about the dorms of Indiana University, including dorm tours, amenities, pros/cons and much more!" />
+        <meta property="og:image" content="img/mci-logo.png" />        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        
+        <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/slicknav.css" />
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/pages.css" />
+        <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/ie8.css" /><![endif]-->
+       
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script src="js/dorm-map.js"></script> 
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <!-- xxx Share This Buttons (Social Media Share) xxx -->
+        <script type="text/javascript">var switchTo5x=true;</script>
+        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+        <script type="text/javascript">stLight.options({publisher: "9aa9f18f-1bd3-4e9d-a7d6-4529777ac776", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+    </head>
+    <body onload="plot_dorm_data();">
+        <!--[if lte IE 7]><script src="js/ie6/warning.js"></script><script>window.onload=function(){e("js/ie6/")}</script><![endif]-->
+
+        <nav id="main-nav">
+            <div class="container">
+                <div id="logo"><img src="img/mci-logo.png" alt="MyCampus Island logo"><p class="text-center" id="logo-text">The Collegiate Reference For Housing</p></div>
+                <ul id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Dorms</a></li>
+                    <li><a href="#">Housing Search</a></li>
+                    <li><a href="#">Landlords</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="dorm-map"></div>   
+
+        <section id="northwest">
+            <div class="container">
+                <p class="neighborhood-title text-center">Northwest Neighborhood</p>
+                <hr>
+                <div class="col-sm-4">
+                    <img src="photos/dorms/McNutt-1.jpg" class="img-center">
+                    <img src="photos/dorms/McNutt-2.jpg" class="pad-vert-10 visible-sm">
+                </div>
+                <div class="col-sm-8">
+                    <p class="dorm-desc">These dorms are in a prime location for Business &amp; SPEA majors. However, they are the furthest dorms from most other classes, so taking the bus is usually a must. The Northwest is in close proximity to Assembly Hall and Memorial Stadium and most athletes are put into these dorms. They are also known for their party atmoshpere (with the exception of Collins) and generally draw a more rowdy crowd as well as a higher percentage of students that go Greek.</p>
+                    <p>Perfect for: Individuals who are outgoing and able to get work done in a somewhat noisier and more distracting environment. This is also a good area for "partiers", business majors, and those who are planning to rush a frat/sorority.</p>
+                </div>
+                <div class="col-sm-4 pros text-center pad-vert-15 hidden-xs">
+                    <p><strong>Pros</strong></p>
+                    <ul>
+                        <li><span class="glyphicon glyphicon-ok-circle"></span> Proximity to athletics</li>
+                        <li><span class="glyphicon glyphicon-ok-circle"></span> Reputation of more sociable</li>
+                        <li><span class="glyphicon glyphicon-ok-circle"></span> Great for Business Majors</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 cons text-center pad-vert-15 hidden-xs">
+                    <p><strong>Cons</strong></p>
+                    <ul>
+                        <li><span class="glyphicon glyphicon-remove-circle"></span> Typically noisier environment</li>
+                        <li><span class="glyphicon glyphicon-remove-circle"></span> Furthest from most classes</li>
+                        <li><span class="glyphicon glyphicon-remove-circle"></span> Least community kitchens</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 dorms text-center pad-vert-15">
+                    <p><strong>Dorms</strong></p>
+                    <ul>
+                        <li><a href="#" target="_blank"><span class="glyphicon glyphicon-share-alt"></span> Briscoe</a></li>
+                        <li><a href="#" target="_blank"><span class="glyphicon glyphicon-share-alt"></span> Collins</a></li>
+                        <li><a href="#" target="_blank"><span class="glyphicon glyphicon-share-alt"></span> Foster</a></li>
+                        <li><a href="#" target="_blank"><span class="glyphicon glyphicon-share-alt"></span> McNutt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section> 
+
+        <section id="central">
+            <div class="container">
+                <p class="text-center neighborhood-title">Central Neighborhood</p>
+                <hr>
+                <div class="col-sm-4">
+                    <img src="photos/dorms/Wright-1.jpg" class="img-center">
+                    <img src="photos/dorms/Wright-2.jpg" class="pad-vert-10 visible-sm">
+                </div>
+                <div class="col-sm-8">
+                    <p class="dorm-desc">The Central dorms are located around 10th street with almost every bus on campus having a stop right next to these dorms. Some close attractions include the Wells Library, SRSC (Student Rec Center), Jimmy Johns, Subway, A Total Tan, Red Mango (Frozen yogurt), and Pizza X. There is also a book store/spirit wear shop in Eigenmann. </p>
+                    <p>Perfect for: The central dorms seem to be the most diverse, with a wide range of students. This area is a middle ground between the typical laid back personality type of the southeast dorms and the party atmosphere of the northwest.</p>
+                </div>
+                <div class="col-sm-4 pros text-center pad-vert-15 hidden-xs">
+                    <p><strong>Pros</strong></p>
+                    <ul>
+                        <li><span class="glyphicon glyphicon-ok-circle"></span> Close to Library &amp; Rec Center</li>
+                        <li><span class="glyphicon glyphicon-ok-circle"></span> All bus routes stop close by</li>
+                        <li><span class="glyphicon glyphicon-ok-circle"></span> Volleyball, tennis, &amp; basketball</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 cons text-center pad-vert-15 hidden-xs">
+                    <p><strong>Cons</strong></p>
+                    <ul>
+                        <li><span class="glyphicon glyphicon-remove-circle"></span> No dorms have private bathrooms</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 dorms text-center pad-vert-15">
+                    <p><strong>Dorms</strong></p>
+                    <ul>
+                        <li><a href="#" target="_blank"><span class="glyphicon glyphicon-share-alt"></span> Ashton</a></li>
+                        <li><a href="#" target="_blank"><span class="glyphicon glyphicon-share-alt"></span> Eigenmann</a></li>
+                        <li><a href="#" target="_blank"><span class="glyphicon glyphicon-share-alt"></span> Teter</a></li>
+                        <li><a href="#" target="_blank"><span class="glyphicon glyphicon-share-alt"></span> Wright</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section> 
+
+        <section id="southeast">
+            <div class="container">
+                <p class="text-center neighborhood-title">Southeast Neighborhood</p>
+                <hr>
+                <div class="col-sm-4">
+                    <img src="photos/dorms/Forest-1.jpg" class="img-center">
+                    <img src="photos/dorms/Forest-2.jpg" class="pad-vert-10 visible-sm">
+                </div>
+                <div class="col-sm-8">
+                    <p class="dorm-desc">This neighborhood is located close to most freshman classes (along 3rd street) and is a good area for majors in Fine Arts and Music. The most popular nearby attractions include Mother Bears Pizza, TIS book store, and Jacob's school of Music. It is also located near the 3rd St. frats and sororities. It is the only neighborhood where there is dining on site in every single dorm. </p>
+                    <p>Perfect for: Individuals who are laid back and want a relaxing quiet environment. Most fine arts and music majors choose these dorms due to their location and the fact that it is the only neighborhood with a music practice room in every dorm.</p>
+                </div>
+                <div class="col-sm-4 pros text-center pad-vert-15 hidden-xs">
+                    <p><strong>Pros</strong></p>
+                    <ul>
+                        <li><span class="glyphicon glyphicon-ok-circle"></span> Proximity to most classes</li>
+                        <li><span class="glyphicon glyphicon-ok-circle"></span> Good study environment</li>
+                        <li><span class="glyphicon glyphicon-ok-circle"></span> Great for Arts &amp; Music Majors</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 cons text-center pad-vert-15 hidden-xs">
+                    <p><strong>Cons</strong></p>
+                    <ul>
+                        <li><span class="glyphicon glyphicon-remove-circle"></span> Reputation of less sociable</li>
+                        <li><span class="glyphicon glyphicon-remove-circle"></span> Far from athletics</li>                        
+                    </ul>
+                </div>
+                <div class="col-sm-4 dorms text-center pad-vert-15">
+                    <p><strong>Dorms</strong></p>
+                    <ul>
+                        <li><a href="#" target="_blank"><span class="glyphicon glyphicon-share-alt"></span> Forest</a></li>
+                        <li><a href="#" target="_blank"><span class="glyphicon glyphicon-share-alt"></span> Read</a></li>
+                        <li><a href="#" target="_blank"><span class="glyphicon glyphicon-share-alt"></span> Rose</a></li>
+                        <li><a href="#" target="_blank"><span class="glyphicon glyphicon-share-alt"></span> Willkie</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section> 
+
+        <footer>
+            <div class="container">
+                <img class="img-center" src="img/mci-logo.png" alt="MyCampus Island logo">
+                <hr>
+                <div class="row">
+                    <div class="col-xs-4 text-center mobile-width">
+                        <p class="footer-title" id="search-icon">Search</p>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Housing Properties</a></li>
+                            <li><a href="#">Dorms</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 text-center mobile-width">
+                        <p class="footer-title" id="contact-icon">Contact</p>
+                        <ul>
+                            <li><a href="#">Landlords</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 text-center hide-mobile">
+                        <p class="footer-title hide-mobile" id="connect-icon">Connect</p>
+                        <ul id="share-buttons">
+                            <li><span class='st_sharethis_large' displayText='ShareThis'></span></li>
+                            <li><span class='st_facebook_large' displayText='Facebook'></span></li>
+                            <li><span class='st_twitter_large' displayText='Tweet'></span></li>
+                            <li><span class='st_googleplus_large' displayText='Google +'></span></li>
+                            <li><span class='st_email_large' displayText='Email'></span></li>
+                        </ul>                        
+                    </div>                    
+                </div>
+            </div>
+            <div class="copyright-no-sticky">
+                <div class="container">
+                    <p class="no-margin text-center">MyCampus Island &nbsp; | &nbsp; Copyright &#169; 2013 MyCampus Island. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <!-- xxx slicknav mobile responsive navbar xxx -->
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#menu').slicknav();
+            });
+        </script>
+        <!-- xxx Google Analytics xxx -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-49766018-1', 'mycampusisland.com');ga('send', 'pageview');
+        </script>
+    </body>
+</html>
