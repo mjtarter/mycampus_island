@@ -1257,6 +1257,21 @@ ul.utilities-list li {
 	}
 }
 
+/* ==========================================================================
+ 	landlords.html
+   ========================================================================== */
+
+#landlords-page {
+	background-image: url('../img/tan-background.png');
+
+}
+
+@media (max-width: 767px) {
+
+	#landlord-text {
+		padding:0px;
+	}
+}
 
 
 
