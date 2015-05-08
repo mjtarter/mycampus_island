@@ -1246,6 +1246,16 @@ ul.utilities-list li {
   background-image: url('../photos/dorms/Willkie-6.jpg');
 }
 
+/* ==========================================================================
+ 	dorm-amenities.php
+   ========================================================================== */
+
+@media (min-width: 450px) and (max-width: 767px) {
+
+	#dorm-amenities-page ul.amenities-list li {
+		padding-left:4%;
+	}
+}
 
 
 
