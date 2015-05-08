@@ -73,6 +73,15 @@ section#encyclopedia {
 }
 
 /* ==========================================================================
+ 	mapping.php
+   ========================================================================== */
+
+/* Smaller font to fit overlay text */
+#iw-overlay-table {
+	font-size:10px;
+}
+
+/* ==========================================================================
  	Media Queries
    ========================================================================== */
 
@@ -110,15 +119,25 @@ section#encyclopedia {
 	}
 }
 
-	/* MAPPING.HTML - Google IW nth child work around on IE */
-
 @media (max-width: 460px) {
-	
+	/* MAPPING.HTML - Google IW nth child work around on IE */
 	.iw-basic-info li.ie-nth-child-even {
-		text-align:right;
+		text-align:center;
 	}
 	
 	.iw-basic-info li.ie-nth-child-odd {
-		text-align:left;
+		text-align:center;
+		clear:both
+	}
+	/* END */
+	
+	/* Fix - Prevent IW from being to narrow */
+	#gmap-iw-img {
+		min-width:260px;
+	}
+	
+	/* Fix - padding on right of IW auto increases on IE, so increase padding left to match */
+	.gm-style-iw {
+		padding-left:10px;
 	}
 }
