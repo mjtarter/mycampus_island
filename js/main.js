@@ -18,7 +18,7 @@ function newPopup(url) {
         url,'popUpWindow','height=700,width=500,left=500,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
 }
 
-// Instagram-like roatating images display
+// Instagram-like roatating images display (HOUSING PROPERTIES)
 
 img2 = new Image()
 
