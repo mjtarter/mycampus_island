@@ -1263,7 +1263,6 @@ ul.utilities-list li {
 
 #landlords-page {
 	background-image: url('../img/tan-background.png');
-
 }
 
 @media (max-width: 767px) {
@@ -1273,5 +1272,17 @@ ul.utilities-list li {
 	}
 }
 
+/* ==========================================================================
+ 	contact-us.html
+   ========================================================================== */
+
+#contact-page {
+	background-image: url('../img/tan-background.png');
+}
+
+	#contact-page label {
+		border:none;
+		width:120px;
+	}
 
 
