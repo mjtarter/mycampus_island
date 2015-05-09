@@ -58,17 +58,15 @@
             <div class="container">
                 <div id="logo"><img src="img/mci-logo.png" alt="MyCampus Island logo"><p class="text-center" id="logo-text">The Collegiate Reference For Housing</p></div>
                 <ul id="menu">
-                    <li><a href="#">Basic Info</a></li>
+                    <li><a href="property.php?id=<?php $id = $field_db['id']; echo $id; ?>">Basic Info</a></li>
                     <li><a href="gallery.php?id=<?php $id = $field_db['id']; echo $id; ?>">Gallery</a></li>
                     <li><a href="amenities.php?id=<?php $id = $field_db['id']; echo $id; ?>">Amenities</a></li>
-                    <li><a href="location.php?id=<?php $id = $field_db['id']; echo $id; ?>">Location</a></li>
+                    <li><a href="#">Location</a></li>
                 </ul>
             </div>
         </nav>
 
         <div id="location"></div>
-
-        <?php }; ?> <!-- End PHP !-->
 
         <footer>
             <div class="container">
@@ -79,9 +77,9 @@
                         <p class="footer-title" id="search-icon">Info</p>
                         <div>
                             <ul class="f-left">
-                                <li><a href="#">Basic Info</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Amenities</a></li>
+                                <li><a href="property.php?id=<?php $id = $field_db['id']; echo $id; ?>">Basic Info</a></li>
+                                <li><a href="gallery.php?id=<?php $id = $field_db['id']; echo $id; ?>">Gallery</a></li>
+                                <li><a href="amenities.php?id=<?php $id = $field_db['id']; echo $id; ?>">Amenities</a></li>
                             </ul>
                             <ul class="f-left">
                                 <li><a href="#">Contact</a></li>
@@ -92,9 +90,8 @@
                     <div class="col-xs-4 text-center mobile-width">
                         <p class="footer-title" id="contact-icon">Contact</p>
                         <ul>
-                            <li><a href="#">Landlords</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="landlords.html">Landlords</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-4 text-center hide-mobile" id="f-right">
@@ -115,6 +112,8 @@
                 </div>
             </div>
         </footer> 
+
+        <?php }; ?> <!-- End PHP !-->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

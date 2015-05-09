@@ -153,19 +153,19 @@
     	<section class="container hidden-xs" id="link-boxes">
 	    	<hr>
 	    	<ul class="col-sm-12" id="property-boxes">
-	    		<a href="#">
+	    		<a href="gallery.php?id=<?php $id = $field_db['id']; echo $id; ?>">
 	    			<li class="col-sm-4" id="gallery-box" style= <?php echo '"background-image:url(photos/' . $field_db['id'] . '.jpg)"' ?>>
 	    				<p class="box-list-title">Gallery</p>
 	    				<span class="glyphicon glyphicon-circle-arrow-right pad-vert-10"></span>
 	    			</li>
 	    		</a>
-	    		<a href="">
+	    		<a href="amenities.php?id=<?php $id = $field_db['id']; echo $id; ?>">
 		    		<li class="col-sm-4" id="amenities-box">
 						<p class="box-list-title">Amenities</p>
 		    			<span class="glyphicon glyphicon-circle-arrow-right pad-vert-10"></span>
 		    		</li>
 	    		</a>
-	    		<a href="">
+	    		<a href="location.php?id=<?php $id = $field_db['id']; echo $id; ?>">
 		    		<li class="col-sm-4" id="map-box">
 						<p class="box-list-title">Map</p>
 		    			<span class="glyphicon glyphicon-circle-arrow-right pad-vert-10"></span>
@@ -185,21 +185,20 @@
                     	<div>
 	                        <ul class="f-left">
 	                        	<li><a href="#">Basic Info</a></li>
-	                            <li><a href="#">Gallery</a></li>
-	                            <li><a href="#">Amenities</a></li>
+	                            <li><a href="gallery.php?id=<?php $id = $field_db['id']; echo $id; ?>">Gallery</a></li>
+	                            <li><a href="amenities.php?id=<?php $id = $field_db['id']; echo $id; ?>">Amenities</a></li>
 	                        </ul>
 	                        <ul class="f-left">
 	                            <li><a href="#">Contact</a></li>
-	                            <li><a href="#">Map</a></li>
+	                            <li><a href="location.php?id=<?php $id = $field_db['id']; echo $id; ?>">Map</a></li>
 	                        </ul>
 	                    </div>
                     </div>
                 	<div class="col-xs-4 text-center mobile-width">
                     	<p class="footer-title" id="contact-icon">Contact</p>
                         <ul>
-                        	<li><a href="#">Landlords</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">About Us</a></li>
+                        	<li><a href="landlords.html">Landlords</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
                         </ul>
                     </div>
                 	<div class="col-xs-4 text-center hide-mobile" id="f-right">

@@ -39,7 +39,7 @@
               parseFloat(markers[i].getAttribute("lng")));
 		  var html = '<img src="photos/dorms/' + Name + '-1.jpg" class="margin-vert-5" id="gmap-iw-img">' +
 		  			'<p class="no-margin text-center"><strong>' + Name + '<strong></p>' +
-		  			'<a href="#" target=_blank; class="button blue-button" id="listing-btn"><strong>More Info</strong></a>';
+		  			'<a href="dorm-page.php?id=' + Name + '" target=_blank class="button blue-button" id="listing-btn"><strong>More Info</strong></a>';
 		  var icon = customIcons[location] || {};
           var marker = new google.maps.Marker({
             map: map,

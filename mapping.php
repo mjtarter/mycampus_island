@@ -34,10 +34,10 @@
             <div class="container">
                 <div id="logo"><img src="img/mci-logo.png" alt="MyCampus Island logo"><p class="text-center" id="logo-text">The Collegiate Reference For Housing</p></div>
                 <ul id="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Dorms</a></li>
-                    <li><a href="#">Housing Search</a></li>
-                    <li><a href="#">Landlords</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="housing-search.html">Housing Search</a></li>
+                    <li><a href="dorms.html">Dorms</a></li>
+                    <li><a href="landlords.html">Landlords</a></li>
                 </ul>
             </div>
         </nav>

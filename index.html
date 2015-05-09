@@ -15,8 +15,10 @@
 		<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/all.min.css" />
-		<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/ie8.css" /><![endif]-->
+        <link rel="stylesheet" href="css/slicknav.css" />
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/pages.css" />
+        <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/ie8.css" /><![endif]-->
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <!-- xxx Share This Buttons (Social Media Share) xxx -->
@@ -31,20 +33,20 @@
         		<div id="logo"><img src="img/mci-logo.png" alt="MyCampus Island logo"><p class="text-center" id="logo-text">The Collegiate Reference For Housing</p></div>
                 <ul id="menu">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Dorms</a></li>
-                    <li><a href="#">Housing Search</a></li>
-                    <li><a href="#">Landlords</a></li>
+                    <li><a href="housing-search.html">Housing Search</a></li>
+                    <li><a href="dorms.html">Dorms</a></li>
+                    <li><a href="landlords.html">Landlords</a></li>
                 </ul>
             </div>
         </nav>
         
         <section id="top">
         	<div class="container text-center" id="top-content">
-                <h1>B-Town Student Housing Database</h1>
-                <p id="top-content-text">1,000's of properties each with their own individual pages!</p>
+                <h1 class="pad-0">B-Town Student Housing Database</h1>
+                <p id="top-content-text">Hundreds of properties each with their own individual pages!</p>
                 <p>
-                	<a href="#" class="button button-left blue-button">» &nbsp; Housing Properties</a>
-					<a href="#" class="button blue-button">» &nbsp; Dorms</a>
+                	<button onclick="window.location.href='housing-search.html'" class="button button-left blue-button">» &nbsp; Housing Properties</button>
+					<button onclick="window.location.href='dorms.html'" class="button blue-button">» &nbsp; Dorms</button>
                 </p>
             </div>
         </section>
@@ -54,7 +56,7 @@
                	<div class="row">
                 	<div class="col-md-6 col-md-offset-3">
                     	<p class="text-center" id="about-title">About</p><hr>
-                    	<p class="text-center">We are a revolutionary student housing web based application just for Indiana University students. We work directly with landlords to provide updated student housing listings and combine this with our very own Student Housing Encyclopedia. The Encyclopedia displays in depth individual pages for EVERY student housing property in B-Town. Enjoy!</p>
+                    	<p class="text-center">MyCampus Island is a revolutionary student housing web-based application just for Indiana University students. The site interacts directly with landlords to provide updated student housing listings that show which properties are available for the upcoming semester. MCI also provides a Student Housing Encyclopedia, which displays in-depth individual pages for EVERY student housing property regardless of whether it is available for the upcoming semester. Enjoy!</p>
                         <p class="text-center" id="steps-title">It's as easy as 1, 2, 3</p>
                     </div>
                 </div>
@@ -63,7 +65,7 @@
                     	<li class="col-sm-4">
                         	<img src="img/icon-1.png">
                             <p class="step">Enter Search Criteria</p>
-                            <p>Enter the search criteria that you pefer to narrow down the results.</p>
+                            <p>Select your preferences to narrow down the results.</p>
                         </li>
                         <li class="col-sm-4">
                         	<img src="img/icon-2.png">
@@ -86,11 +88,12 @@
                     <img class="col-md-6 img-center" id="features-img" src="img/property-page-screenshot.png" alt="student housing property page">
                     <div class="col-md-6 text-center" id="housing-info">
                         <h2 id="info-title"><i>Revolutionary Housing Information</i></h2>
-                        <p id="info-text">MyCampus Island is bringing an immersive platform filled with all the data you can imagine to allow you to make informed decisions about where to spend your college years. Our data is constantly updated and every single property has it's own page allowing for property comparisons. Don't be overwhelmed though, everything is easy to find.<br> <a href="#" class="button" id="tan-button">&#187; &nbsp; Get Started!</a></p>
+                        <p id="info-text">MyCampus Island is bringing an immersive platform filled with all the data you can imagine to allow you to make informed decisions about where to spend your college years. Our data is constantly updated and every single property has it's own page allowing for property comparisons. Don't be overwhelmed though, everything is easy to find.
+                            <br> <button onclick="window.location.href='housing-search.html'" class="button" id="tan-button">&#187; &nbsp; Get Started!</button></p>
                     </div>
                 </div>
                 <ul class="clearfix" id="features">
-                    <li><img src="img/icon-video.png"><p class="text-center">Dorm Tours</p></li>
+                    <li><img src="img/icon-notepad.png"><p class="text-center">Descriptions</p></li>
                     <li><img src="img/icon-price.png"><p>Prices</p></li>
                     <li><img src="img/icon-binoculars.png"><p>Location</p></li>
                     <li><img src="img/icon-camera.png"><p>Images</p></li>
@@ -106,37 +109,36 @@
         	<div class="container">
             	<p id="encyclopedia-title">The Student Housing Encyclopedia</p>
                 <p><em>Listings are great for students who do things last minute or those in need of a place right now, but what about those who plan ahead? What if you want detailed information about any property or to contact a landlord before the unit is available?</em></p>
-                <p>We combine listings with our proprietary Student Housing Encyclopedia that allows you to get the low down on <strong><u>ANY</u></strong> property in Bloomington. View images, step inside to take a tour, view detailed property information, and contact the landlord without ever leaving your couch!</p><br>
+                <p>We combine listings with our proprietary Student Housing Encyclopedia that allows you to get the low down on <strong><u>ANY</u></strong> property. View images, step inside to take a tour, examine detailed property information, and contact the landlord without ever leaving your couch!</p><br>
                 <p style="text-align:center;">
-                	<a href="#" class="button button-left blue-button">» &nbsp; Listings</a>
-					<a href="#" class="button blue-button">» &nbsp; Encyclopedia</a>
+                	<button onclick="window.location.href='housing-search.html'" class="button button-left blue-button">» &nbsp; Listings</button>
+					<button onclick="window.location.href='housing-search.html'" class="button blue-button">» &nbsp; Encyclopedia</button>
                 </p>
             </div>
         </section>
         
         <footer>
-        	<div class="container">
-            	<img class="img-center" src="img/mci-logo.png" alt="MyCampus Island logo">
+            <div class="container">
+                <img class="img-center" src="img/mci-logo.png" alt="MyCampus Island logo">
                 <hr>
                 <div class="row">
-                	<div class="col-xs-4 text-center mobile-width">
-                    	<p class="footer-title" id="search-icon">Search</p>
+                    <div class="col-xs-4 text-center mobile-width">
+                        <p class="footer-title" id="search-icon">Search</p>
                         <ul>
-                        	<li><a href="#">Home</a></li>
-                            <li><a href="#">Housing Properties</a></li>
-                            <li><a href="#">Dorms</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="housing-search.html">Housing Properties</a></li>
+                            <li><a href="dorms.html">Dorms</a></li>
                         </ul>
                     </div>
-                	<div class="col-xs-4 text-center mobile-width">
-                    	<p class="footer-title" id="contact-icon">Contact</p>
+                    <div class="col-xs-4 text-center mobile-width">
+                        <p class="footer-title" id="contact-icon">Contact</p>
                         <ul>
-                        	<li><a href="#">Landlords</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="landlords.html">Landlords</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
                         </ul>
                     </div>
-                	<div class="col-xs-4 text-center hide-mobile">
-                    	<p class="footer-title hide-mobile" id="connect-icon">Connect</p>
+                    <div class="col-xs-4 text-center hide-mobile">
+                        <p class="footer-title hide-mobile" id="connect-icon">Connect</p>
                         <ul id="share-buttons">
                             <li><span class='st_sharethis_large' displayText='ShareThis'></span></li>
                             <li><span class='st_facebook_large' displayText='Facebook'></span></li>
@@ -147,9 +149,9 @@
                     </div>                    
                 </div>
             </div>
-            <div class="copyright">
-            	<div class="container">
-            		<p class="no-margin text-center">MyCampus Island &nbsp; | &nbsp; Copyright &#169; 2013 MyCampus Island. All rights reserved.</p>
+            <div class="copyright-no-sticky">
+                <div class="container">
+                    <p class="no-margin text-center">MyCampus Island &nbsp; | &nbsp; Copyright &#169; 2013 MyCampus Island. All rights reserved. | Developed by <a style="color:tan" href="http://openmindwebs.com" target="_blank">Open Mind Webs</a></p>
                 </div>
             </div>
         </footer>

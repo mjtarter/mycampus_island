@@ -22,8 +22,7 @@ body {
 }
 
 a, 
-a:hover,
-a:visited {
+a:hover {
 	text-decoration:none;
 	color:inherit;
 }
@@ -84,7 +83,7 @@ footer {
 	position:relative;
 }
 
-	footer a {
+	footer a, footer a:visited {
 		color:white;
 	}
 	

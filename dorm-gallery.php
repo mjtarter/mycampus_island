@@ -52,10 +52,10 @@
         	<div class="container">
         		<div id="logo"><img src="img/mci-logo.png" alt="MyCampus Island logo"><p class="text-center" id="logo-text">The Collegiate Reference For Housing</p></div>
                 <ul id="menu">
-		        	<li><a href="#">Basic Info</a></li>
+		        	<li><a href="dorm-page.php?id=<?php $Name = $field_db['Name']; echo $Name; ?>">Basic Info</a></li>
 		            <li><a href="#">Gallery</a></li>
-		            <li><a href="amenities.php?id=<?php $Name = $field_db['Name']; echo $Name; ?>">Amenities</a></li>
-                	<li><a href="location.php?id=<?php $Name = $field_db['Name']; echo $Name; ?>">Location</a></li>
+		            <li><a href="dorm-amenities.php?id=<?php $Name = $field_db['Name']; echo $Name; ?>">Amenities</a></li>
+                	<li><a href="dorm-location.php?id=<?php $Name = $field_db['Name']; echo $Name; ?>">Location</a></li>
                 </ul>
             </div>
         </nav>
@@ -170,22 +170,21 @@
                     	<p class="footer-title" id="search-icon">Info</p>
                     	<div>
 	                        <ul class="f-left">
-	                        	<li><a href="#">Basic Info</a></li>
+	                        	<li><a href="dorm-page.php?id=<?php $id = $field_db['Name']; echo $Name; ?>">Basic Info</a></li>
 	                            <li><a href="#">Gallery</a></li>
-	                            <li><a href="#">Amenities</a></li>
+	                            <li><a href="dorm-amenities.php?id=<?php $id = $field_db['Name']; echo $Name; ?>">Amenities</a></li>
 	                        </ul>
 	                        <ul class="f-left">
 	                            <li><a href="#">Contact</a></li>
-	                            <li><a href="#">Map</a></li>
+	                            <li><a href="dorm-location.php?id=<?php $id = $field_db['Name']; echo $Name; ?>">Map</a></li>
 	                        </ul>
 	                    </div>
                     </div>
                 	<div class="col-xs-4 text-center mobile-width">
                     	<p class="footer-title" id="contact-icon">Contact</p>
                         <ul>
-                        	<li><a href="#">Landlords</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">About Us</a></li>
+                        	<li><a href="landlords.html">Landlords</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
                         </ul>
                     </div>
                 	<div class="col-xs-4 text-center hide-mobile" id="f-right">

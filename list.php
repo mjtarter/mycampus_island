@@ -96,10 +96,10 @@
         	<div class="container">
         		<div id="logo"><img src="img/mci-logo.png" alt="MyCampus Island logo"><p class="text-center" id="logo-text">The Collegiate Reference For Housing</p></div>
                 <ul id="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Dorms</a></li>
-                    <li><a href="#">Housing Search</a></li>
-                    <li><a href="#">Landlords</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="housing-search.html">Housing Search</a></li>
+                    <li><a href="dorms.html">Dorms</a></li>
+                    <li><a href="landlords.html">Landlords</a></li>
                 </ul>
             </div>
         </nav>
@@ -218,11 +218,11 @@
 				<div class='col-xs-12 col-md-6 pad-vert-10 results-col'>
 					<div class='text-center'>
 						<span class='glyphicon glyphicon-map-marker' style='color:" . iconColor($type) . "'></span>
-						<strong><a target = '_blank' href='property.php?id=".$id."'>$apt_name $address</a></strong>
+						<strong><a target ='_blank' href='property.php?id=".$id."'>$apt_name $address</a></strong>
 					</div>
 					<p class='no-margin' id='description'>$Description</p>
 					<p class='text-center no-margin'>
-						<button class='button blue-button margin-hor-10' style='background-color:" . iconColor($type) . "'> <span class='glyphicon glyphicon-circle-arrow-right'></span> More Info</button>
+						<a href='property.php?id=" .$id."' target ='_blank'><button class='button blue-button margin-hor-10' style='background-color:" . iconColor($type) . "'> <span class='glyphicon glyphicon-circle-arrow-right'></span> More Info</button></a>
 						<button class='button blue-button' style='background-color:" . iconColor($type) . "'><span class='glyphicon glyphicon-envelope'></span> Contact</button>
 					</p>
 				</div>\n

@@ -82,7 +82,7 @@
 		  					'<li class="text-center ie-nth-child-odd"><strong>Floors:</strong><br>' + floors + '</li>' +
 		  					'<li class="text-right ie-nth-child-even"></li>' +
 		  				'</ul>' +
-		  				'<a href=property-page-NEW.php?id=' + id  + ' target=_blank; class="button blue-button" id="listing-btn"><strong>View Listing</strong></a>' 
+		  				'<a href=property.php?id=' + id  + ' target=_blank class="button blue-button" id="listing-btn"><strong>View Listing</strong></a>' 
 			  var icon = customIcons[type] || {}; 
 			  var marker = new google.maps.Marker({
 				map: map,
