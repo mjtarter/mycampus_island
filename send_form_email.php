@@ -39,13 +39,13 @@ if(isset($_POST['email'])) {
         !isset($_POST['last_name']) ||
  
         !isset($_POST['email']) ||
-    
-    !isset($_POST['comments'])) {
+		
+		!isset($_POST['comments'])) {
  
         died('We are sorry, but there appears to be a problem with the form you submitted.');         
  
     }
-   
+  
     $first_name = $_POST['first_name']; // required
  
     $last_name = $_POST['last_name']; // required
@@ -54,6 +54,9 @@ if(isset($_POST['email'])) {
  
     $comments = $_POST['comments']; // not required
 
+
+
+ 
      
  
     $error_message = "";
@@ -98,17 +101,16 @@ if(isset($_POST['email'])) {
       return str_replace($bad,"",$string);
  
     }
-
-
  
     $email_message .= "First Name: ".clean_string($first_name)."\n";
-  
-  $email_message .= "Last Name: ".clean_string($last_name)."\n";
+	
+	$email_message .= "Last Name: ".clean_string($last_name)."\n";
 
     $email_message .= "Email: ".clean_string($email)."\n";
  
-    $email_message .= "Message: ".clean_string($comments)."\n";
-  
+    $email_message .= "Comments: ".clean_string($comments)."\n";
+ 
+     
  
      
  

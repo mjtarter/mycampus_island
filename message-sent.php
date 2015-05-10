@@ -89,10 +89,7 @@ if(isset($_POST['email'])) {
  
     died($error_message);
  
-  }
- 
-    $email_message = "Form details below.\n\n";
- 
+  } 
      
  
     function clean_string($string) {
@@ -105,15 +102,11 @@ if(isset($_POST['email'])) {
 
 
  
-    $email_message .= "First Name: ".clean_string($first_name)."\n";
+    $email_message .= "Name: ".clean_string($first_name). " " .clean_string($last_name)."\n";
   
-    $email_message .= "Last Name: ".clean_string($last_name)."\n";
-
-    $email_message .= "Email: ".clean_string($email)."\n";
-
-    $email_message .= "Phone: ".clean_string($phone)."\n";  
+    $email_message .= "Phone: ".clean_string($phone)."\n\n";  
  
-    $email_message .= "Message: ".clean_string($comments)."\n";
+    $email_message .= clean_string($comments)."\n";
   
  
      
