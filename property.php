@@ -126,7 +126,7 @@
 						</p>
 					</div>					
 					<div class="col-xs-4 col-md-2 col-lg-offset-1 text-right overlay-btn">
-						<button onClick="overlayOn()" class="button blue-button">Contact Us!</button>
+						<?php  if ($field_db['contact_email'] !== "") {echo '<button onClick="overlayOn()" class="button blue-button">Contact Us!</button>';}?>
 					</div>
 				</div>
 			</div>
@@ -225,7 +225,7 @@
 	                            <li><a href="amenities.php?id=<?php $id = $field_db['id']; echo $id; ?>">Amenities</a></li>
 	                        </ul>
 	                        <ul class="f-left">
-	                            <li><a href="#" onclick="overlayOn()">Contact</a></li>
+	                            <li><a href="#" <?php  if ($field_db['contact_email'] !== "") {echo 'onclick="overlayOn()"';}?>>Contact</a></li>
 	                            <li><a href="location.php?id=<?php $id = $field_db['id']; echo $id; ?>">Map</a></li>
 	                        </ul>
 	                    </div>
