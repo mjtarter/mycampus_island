@@ -1285,4 +1285,15 @@ ul.utilities-list li {
 		width:120px;
 	}
 
+/* ==========================================================================
+ 	send-form-email.php
+   ========================================================================== */
+
+body#contact-form {
+	background-image: url('../img/tan-background.png');
+}
+
+#contact-form section p {
+	font-size:1.3em;
+}
 
