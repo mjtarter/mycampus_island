@@ -11,6 +11,18 @@ function toggle() {
 	}
 }
 
+// Toggle Contact Landlord Overlay
+
+function overlayHide() {
+	if (document.getElementById('contact-overlay').style.display == 'table') {
+    	document.getElementById('contact-overlay').style.display = "none";
+	}
+}
+
+function overlayOn() {
+	document.getElementById('contact-overlay').style.display = 'table';
+}
+
 // Popup window (property.php)
 
 function newPopup(url) {
