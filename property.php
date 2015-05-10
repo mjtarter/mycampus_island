@@ -58,7 +58,7 @@
 	                <h1 class="no-margin pad-0"><i>Contact</i></h1>
 	                <p><i><?php if ($field_db['phone'] !== "") {echo '<span class="glyphicon glyphicon-phone"></span> ' . $field_db['phone'];}?></i></p>
 	                <hr>
-	                <form name="contactform" method="post" class="form-horizontal" action="send_form_email.php">
+	                <form name="contactform" method="post" class="form-horizontal" action="message-sent.php">
 	                    <div class="form-group">
 	                        <label for="first-name">First Name *</label>
 	                        <input type="text" id="first-name" name="first_name">
@@ -72,7 +72,7 @@
 	                        <input type="text" id="email" name="email">
 	                    </div>
 	                    <div class="form-group">
-	                        <label for="email">Phone *</label></td>
+	                        <label for="phone">Phone</label></td>
 	                        <input type="text" id="phone" name="phone">
 	                    </div>
 	                    <div class="form-group" style="width:80%; margin-right:auto; margin-left:auto">

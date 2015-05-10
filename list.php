@@ -258,7 +258,6 @@
 					<p class='no-margin' id='description'>$Description</p>
 					<p class='text-center no-margin'>
 						<a href='property.php?id=" .$id."' target ='_blank'><button class='button blue-button margin-hor-10' style='background-color:" . iconColor($type) . "'> <span class='glyphicon glyphicon-circle-arrow-right'></span> More Info</button></a>
-						<button onclick='overlayOn()' class='button blue-button' style='background-color:" . iconColor($type) . "'><span class='glyphicon glyphicon-envelope'></span> Contact</button>
 					</p>
 				</div>\n
 				<ul class='col-xs-12 col-md-2 results-col pad-vert-10' id='basic-info-list'>

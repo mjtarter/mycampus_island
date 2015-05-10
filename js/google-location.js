@@ -69,7 +69,6 @@
 			  					'<table class="text-center" id="iw-overlay-table">' +
 			  						'<tr>' +
 			  							'<td class="vert-middle"><p class="no-margin"><strong>Property Manager:<br></strong>' + property_manager + '</p></td>' + 
-			  							'<td class="pad-hor-5"><a href="#" class="button blue-button pull-right">Contact</a></td>' +
 			  						'</tr>' +
 			  					'</table>' + 
 			  				'</div>' + 

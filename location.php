@@ -80,7 +80,7 @@
                         </div>
                         <div class="form-group" style="width:80%; margin-right:auto; margin-left:auto">
                             <label for="comments" class="text-center">Message *</label>
-                            <textarea class="form-control" id="comments" name="comments" rows="5">Hello! I was searching for an apartment on MyCampusIsland.com and found details of The Warehouse at Northgate. Please get in touch as soon as possible to discuss availability. Thanks!"</textarea>
+                            <textarea class="form-control" id="comments" name="comments" rows="5">Hello! I was searching for student housing on MyCampusIsland.com and found information about <?php if ($field_db['type'] == "apartment" or $field_db['type'] == "apartment, townhome") { echo $field_db['apt_name'];} else { echo $field_db['address'];}; ?>. Please respond at your earliest convenience to discuss availability. Thank you!"</textarea>
                         </div>
                         <div class="form-group">
                             <input type="submit" class="button blue-button" value="Submit">
