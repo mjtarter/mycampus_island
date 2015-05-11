@@ -54,6 +54,19 @@
 
         <!--[if lte IE 7]><script src="js/ie6/warning.js"></script><script>window.onload=function(){e("js/ie6/")}</script><![endif]-->
     
+        <div id="contact-overlay">
+            <section class="container" id="contact-overlay-section">
+                <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-center" id="contact-overlay-box">
+                    <p class="text-right no-margin"><span onclick="overlayHide()" class="glyphicon glyphicon-remove-circle exit-button"></span></p>
+                    <h1 class="no-margin pad-0"><i>Contact</i></h1>
+                    <hr>
+                    <p class="text-left col-md-offset-1"><span class="glyphicon glyphicon-map-marker"></span> <?php echo $field_db['address']; ?></p>
+                    <p class="text-left col-md-offset-1"><span class="glyphicon glyphicon-phone"></span> <?php echo $field_db['phone']; ?></p>
+                    <p class="text-left col-md-offset-1"><span class="glyphicon glyphicon-envelope"></span> General Information: <?php echo $field_db['email']; ?></p>
+                </div>          
+            </section>
+        </div>
+
         <nav id="main-nav">
             <div class="container">
                 <div id="logo"><img src="img/mci-logo.png" alt="MyCampus Island logo"><p class="text-center" id="logo-text">The Collegiate Reference For Housing</p></div>
@@ -84,7 +97,7 @@
                                 <li><a href="dorm-amenities.php?id=<?php $id = $field_db['Name']; echo $Name; ?>">Amenities</a></li>
                             </ul>
                             <ul class="f-left">
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#" onClick="overlayOn()">Contact</a></li>
                                 <li><a href="#">Map</a></li>
                             </ul>
                         </div>
