@@ -173,7 +173,9 @@ $headers = 'From: '.$email_from."\r\n".
         </nav>
         
         <section class="container text-center">
-      <p>Thank you for contacting us. We will be in touch with you very soon.</p> 
+            <p>Your message has been sent. Thank you!</p> 
+            <p><a href="javascript:history.back()">Back to Property Page</a></p>
+
         </section>       
         
     </div> <!-- End Sticky Footer Page Wrap !-->       

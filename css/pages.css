@@ -1313,7 +1313,7 @@ ul.utilities-list li {
 	}
 
 /* ==========================================================================
- 	send-form-email.php
+ 	send-form-email.php & message-sent.php
    ========================================================================== */
 
 body#contact-form {
@@ -1322,5 +1322,9 @@ body#contact-form {
 
 #contact-form section p {
 	font-size:1.3em;
+}
+
+#contact-form p a {
+	text-decoration:underline;
 }
 
