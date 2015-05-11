@@ -39,8 +39,8 @@ if(isset($_POST['email'])) {
         !isset($_POST['last_name']) ||
  
         !isset($_POST['email']) ||
-		
-		!isset($_POST['comments'])) {
+        
+        !isset($_POST['comments'])) {
  
         died('We are sorry, but there appears to be a problem with the form you submitted.');         
  
@@ -103,8 +103,8 @@ if(isset($_POST['email'])) {
     }
  
     $email_message .= "First Name: ".clean_string($first_name)."\n";
-	
-	$email_message .= "Last Name: ".clean_string($last_name)."\n";
+    
+    $email_message .= "Last Name: ".clean_string($last_name)."\n";
 
     $email_message .= "Email: ".clean_string($email)."\n";
  
@@ -213,7 +213,7 @@ $headers = 'From: '.$email_from."\r\n".
                     </div>                    
                 </div>
             </div>
-            <div class="copyright-no-sticky">
+            <div class="copyright">
                 <div class="container">
                     <p class="no-margin text-center">MyCampus Island &nbsp; | &nbsp; Copyright &#169; 2013 MyCampus Island. All rights reserved.</p>
                 </div>

@@ -212,7 +212,7 @@ $headers = 'From: '.$email_from."\r\n".
                     </div>                    
                 </div>
             </div>
-            <div class="copyright-no-sticky">
+            <div class="copyright">
                 <div class="container">
                     <p class="no-margin text-center">MyCampus Island &nbsp; | &nbsp; Copyright &#169; 2013 MyCampus Island. All rights reserved.</p>
                 </div>
