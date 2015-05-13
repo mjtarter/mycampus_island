@@ -19,7 +19,7 @@
 		  var map = new google.maps.Map(document.getElementById("dorm-location"), {
 			center: new google.maps.LatLng(lat, lng),
 			zoom: 17,
-			mapTypeId: 'roadmap'
+			mapTypeId: 'satellite'
 		  });
 
 		  var infoWindow = new google.maps.InfoWindow;

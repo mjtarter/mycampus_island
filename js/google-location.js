@@ -23,7 +23,7 @@
 		  var map = new google.maps.Map(document.getElementById("location"), {
 			center: new google.maps.LatLng(lat, lng),
 			zoom: 17,
-			mapTypeId: 'roadmap'
+			mapTypeId: 'satellite'
 		  });
 
 		//Add price range to IW when applicable

@@ -9,16 +9,14 @@
         <title>Student Housing | Bloomington, Indiana</title>
         <meta name="description" content="The most comprehensive Indiana University student housing resource available for Bloomington, Indiana. View pros/cons, landlord contact, tours, amenities, and much more!">         
         <meta property="og:description" content="Find your dream student housing property in Bloomington, Indiana and sign a lease today!" />
-        <meta property="og:image" content="img/mci-logo.png" />        
+        <meta property="og:image" content="http://mycampusisland.com/img/moving-couch.jpg" />        
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         
         <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/slicknav.css" />
-        <link rel="stylesheet" href="css/global.css" />
-        <link rel="stylesheet" href="css/pages.css" />
+        <link rel="stylesheet" href="css/all.min.css" />
         <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/ie8.css" /><![endif]-->
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>

@@ -23,23 +23,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title><?php echo $field_db['address'] . ' | Bloomington | Student Housing' ;?></title>
         <meta property="og:description" content="Find your dream student housing property in Bloomington, Indiana and sign a lease today!" />
-        <meta property="og:image" content="img/mci-logo.png" />        
+        <meta property="og:image" content="http://mycampusisland.com/img/moving-couch.jpg" />        
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         
         <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/slicknav.css" />
-        <link rel="stylesheet" href="css/global.css" />
-        <link rel="stylesheet" href="css/pages.css" />
+        <link rel="stylesheet" href="css/all.min.css" />
         <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/ie8.css" /><![endif]-->
         
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <!-- xxx Share This Buttons (Social Media Share) xxx -->
         <script type="text/javascript">var switchTo5x=true;</script>
         <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-        <script type="text/javascript">stLight.options({publisher: "9aa9f18f-1bd3-4e9d-a7d6-4529777ac776", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+        <script type="text/javascript">stLight.options({publisher: "9aa9f18f-1bd3-4e9d-a7d6-4529777ac776", doNotHash: true, doNotCopy: false, hashAddressBar: false});</script>
     </head>
     
     <body id="amenities-page">  
