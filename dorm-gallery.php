@@ -46,17 +46,20 @@
     
     <div class="page-wrap"> <!-- Wrapper for sticky footer !-->
 
-    	<div id="contact-overlay">
-			<section class="container" id="contact-overlay-section">
-	            <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-center" id="contact-overlay-box">
-	                <p class="text-right no-margin"><span onclick="overlayHide()" class="glyphicon glyphicon-remove-circle exit-button"></span></p>
-	                <h1 class="no-margin pad-0"><i>Contact</i></h1>
-	                <hr>
-	                <p class="text-left col-md-offset-1"><span class="glyphicon glyphicon-map-marker"></span> <?php echo $field_db['address']; ?></p>
-					<p class="text-left col-md-offset-1"><span class="glyphicon glyphicon-phone"></span> <?php echo $field_db['phone']; ?></p>
-					<p class="text-left col-md-offset-1"><span class="glyphicon glyphicon-envelope"></span> General Information: <?php echo $field_db['email']; ?></p>
+    	<div class="modal fade" id="textModal">
+  			<div class="modal-dialog">
+	            <div class="modal-content text-center">
+	                <div class="modal-header">
+	                	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		                <h1 class="no-margin pad-0"><i>Contact</i></h1>
+		            </div>
+					<div class="modal-body">
+	  					<p class="text-left col-md-offset-1"><span class="glyphicon glyphicon-map-marker"></span> <?php echo $field_db['address']; ?></p>
+						<p class="text-left col-md-offset-1"><span class="glyphicon glyphicon-phone"></span> <?php echo $field_db['phone']; ?></p>
+						<p class="text-left col-md-offset-1"><span class="glyphicon glyphicon-envelope"></span> General Information: <?php echo $field_db['email']; ?></p>
+	                </div>
 	            </div>          
-	        </section>
+	        </div>
 		</div>
 
         <nav id="main-nav">
@@ -186,7 +189,7 @@
 	                            <li><a href="dorm-amenities.php?id=<?php $id = $field_db['Name']; echo $Name; ?>">Amenities</a></li>
 	                        </ul>
 	                        <ul class="f-left">
-	                            <li><a href="#" onClick="overlayOn()">Contact</a></li>
+	                            <li><a href="#textModal" data-toggle="modal">Contact</a></li>
 	                            <li><a href="dorm-location.php?id=<?php $id = $field_db['Name']; echo $Name; ?>">Map</a></li>
 	                        </ul>
 	                    </div>

@@ -11,25 +11,6 @@ function toggle() {
 	}
 }
 
-// Toggle Contact Landlord Overlay
-
-function overlayHide() {
-	if (document.getElementById('contact-overlay').style.display == 'table') {
-    	document.getElementById('contact-overlay').style.display = "none";
-	}
-}
-
-function overlayOn() {
-	document.getElementById('contact-overlay').style.display = 'table';
-}
-
-// Popup window (property.php)
-
-function newPopup(url) {
-    popupWindow = window.open(
-        url,'popUpWindow','height=700,width=500,left=500,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
-}
-
 // Instagram-like roatating images display (HOUSING PROPERTIES)
 
 img2 = new Image()

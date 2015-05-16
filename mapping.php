@@ -28,42 +28,6 @@
 
         <!--[if lte IE 7]><script src="js/ie6/warning.js"></script><script>window.onload=function(){e("js/ie6/")}</script><![endif]-->
 
-        <div id="contact-overlay">
-            <section class="container">
-                <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-center" id="contact-overlay-box">
-                    <p class="text-right"><span onclick="overlayHide()" class="glyphicon glyphicon-remove-circle exit-button"></span></p>
-                    <h1 class="no-margin pad-0"><i>Contact</i></h1>
-                    <p><i><?php if ($field_db['phone'] !== "") {echo '<span class="glyphicon glyphicon-phone"></span> ' . $field_db['phone'];}?></i></p>
-                    <hr>
-                    <form name="contactform" method="post" class="form-horizontal" action="send_form_email.php">
-                        <div class="form-group">
-                            <label for="first-name">First Name *</label>
-                            <input type="text" id="first-name" name="first_name">
-                        </div>
-                        <div class="form-group">
-                            <label for="last-name">Last Name *</label>
-                            <input type="text" id="last-name" name="last_name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email *</label></td>
-                            <input type="text" id="email" name="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Phone *</label></td>
-                            <input type="text" id="phone" name="phone">
-                        </div>
-                        <div class="form-group" style="width:80%; margin-right:auto; margin-left:auto">
-                            <label for="comments" class="text-center">Message *</label>
-                            <textarea class="form-control" id="comments" name="comments" rows="5">Hello! I was searching for student housing on MyCampusIsland.com and found information about <script>document.write(name);</script>. Please respond at your earliest convenience to discuss availability. Thank you!"</textarea>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" class="button blue-button" value="Submit">
-                        </div>
-                    </form>
-                </div>          
-            </section>
-        </div>
-
         <nav id="main-nav">
             <div class="container">
                 <div id="logo"><img src="img/mci-logo.png" alt="MyCampus Island logo"><p class="text-center" id="logo-text">The Collegiate Reference For Housing</p></div>

@@ -30,9 +30,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/global.css" />
-        <link rel="stylesheet" href="css/slicknav.css" />
-        <link rel="stylesheet" href="css/pages.css" />
+        <link rel="stylesheet" href="css/all.min.css" />
 
         <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/ie8.css" /><![endif]-->
         
@@ -229,7 +227,7 @@
 	                            <li><a href="amenities.php?id=<?php $id = $field_db['id']; echo $id; ?>">Amenities</a></li>
 	                        </ul>
 	                        <ul class="f-left">
-	                            <li><a href="#" <?php  if ($field_db['contact_email'] !== "") {echo 'onclick="overlayOn()"';}?>>Contact</a></li>
+	                            <li><a <?php  if ($field_db['contact_email'] !== "") {echo 'href="#textModal" data-toggle="modal"';} else {echo 'href="#"';}?>>Contact</a></li>
 	                            <li><a href="location.php?id=<?php $id = $field_db['id']; echo $id; ?>">Map</a></li>
 	                        </ul>
 	                    </div>
