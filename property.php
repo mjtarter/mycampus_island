@@ -30,7 +30,10 @@
 		<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/slicknav.css" />
+        <link rel="stylesheet" href="css/pages.css" />
+
         <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/ie8.css" /><![endif]-->
         
         <!--Place php id into JS variable for use in main.js !-->
@@ -49,40 +52,43 @@
         
 	<div class="page-wrap"> <!-- Wrapper for sticky footer !-->
 
-		<div id="contact-overlay">
-			<section class="container" id="contact-overlay-section">
-	            <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-center" id="contact-overlay-box">
-	                <p class="text-right no-margin"><span onclick="overlayHide()" class="glyphicon glyphicon-remove-circle exit-button"></span></p>
-	                <h1 class="no-margin pad-0"><i>Contact</i></h1>
-	                <p><i><?php if ($field_db['phone'] !== "") {echo '<span class="glyphicon glyphicon-phone"></span> ' . $field_db['phone'];}?></i></p>
-	                <hr>
-	                <form name="contactform" method="post" class="form-horizontal" action="message-sent.php">
-	                    <div class="form-group">
-	                        <label for="first-name">First Name *</label>
-	                        <input type="text" id="first-name" name="first_name">
-	                    </div>
-	                    <div class="form-group">
-	                        <label for="last-name">Last Name *</label>
-	                        <input type="text" id="last-name" name="last_name">
-	                    </div>
-	                    <div class="form-group">
-	                        <label for="email">Email *</label></td>
-	                        <input type="text" id="email" name="email">
-	                    </div>
-	                    <div class="form-group">
-	                        <label for="phone">Phone</label></td>
-	                        <input type="text" id="phone" name="phone">
-	                    </div>
-	                    <div class="form-group" style="width:80%; margin-right:auto; margin-left:auto">
-	                        <label for="comments" class="text-center">Message *</label>
-	                        <textarea class="form-control" id="comments" name="comments" rows="5">Hello! I was searching for student housing on MyCampusIsland.com and found information about <?php if ($field_db['type'] == "apartment" or $field_db['type'] == "apartment, townhome") { echo $field_db['apt_name'];} else { echo $field_db['address'];}; ?>. Please respond at your earliest convenience to discuss availability. Thank you!</textarea>
-	                    </div>
-	                    <div class="form-group">
-	                        <input type="submit" class="button blue-button" value="Submit">
-	                    </div>
-	                </form>
+		<div class="modal fade" id="textModal">
+  			<div class="modal-dialog">
+	            <div class="modal-content text-center">
+	                <div class="modal-header">
+	                	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		                <h1 class="no-margin pad-0"><i>Contact</i></h1>
+		                <p><i><?php if ($field_db['phone'] !== "") {echo '<span class="glyphicon glyphicon-phone"></span> ' . $field_db['phone'];}?></i></p>
+		            </div>
+					<div class="modal-body">
+		                <form name="contactform" method="post" class="form-horizontal contact-form" action="message-sent.php">
+		                    <div class="form-group">
+		                        <label for="first-name">First Name *</label>
+		                        <input type="text" id="first-name" name="first_name">
+		                    </div>
+		                    <div class="form-group">
+		                        <label for="last-name">Last Name *</label>
+		                        <input type="text" id="last-name" name="last_name">
+		                    </div>
+		                    <div class="form-group">
+		                        <label for="email">Email *</label></td>
+		                        <input type="text" id="email" name="email">
+		                    </div>
+		                    <div class="form-group">
+		                        <label for="phone">Phone</label></td>
+		                        <input type="text" id="phone" name="phone">
+		                    </div>
+		                    <div class="form-group">
+		                        <label for="comments" class="text-center">Message *</label>
+		                        <textarea class="form-control" id="comments" name="comments" rows="5">Hello! I was searching for student housing on MyCampusIsland.com and found information about <?php if ($field_db['type'] == "apartment" or $field_db['type'] == "apartment, townhome") { echo $field_db['apt_name'];} else { echo $field_db['address'];}; ?>. Please respond at your earliest convenience to discuss availability. Thank you!</textarea>
+		                    </div>
+		                    <div class="form-group">
+		                        <input type="submit" class="button blue-button" value="Submit">
+		                    </div>
+	                	</form>    
+	                </div>
 	            </div>          
-	        </section>
+	        </div>
 		</div>
 
         <nav id="main-nav">
@@ -124,7 +130,7 @@
 						</p>
 					</div>					
 					<div class="col-xs-4 col-md-2 col-lg-offset-1 text-right overlay-btn">
-						<?php  if ($field_db['contact_email'] !== "") {echo '<button onClick="overlayOn()" class="button blue-button">Contact Us!</button>';}?>
+						<?php  if ($field_db['contact_email'] !== "") {echo '<a href="#textModal" data-toggle="modal" class="button blue-button">Contact Us!</a>';}?>
 					</div>
 				</div>
 			</div>
