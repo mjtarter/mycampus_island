@@ -1,6 +1,6 @@
 # MyCampus Island
 
-This is a fully responsive web app designed to provider easier access to housing for college students. The site includes search functionality that allows students to narrow down the desired housing based on bedrooms, bath, price, etc. Each mathcing property is then plotted onto a google map and can be clicked for more information.
+This is a fully responsive web app designed to provider easier access to housing for college students. The site includes search functionality that allows students to narrow down their desired housing based on bedrooms, bath, price, etc. Each matching property is then plotted onto a google map and can be clicked for more information.
 
 
 # Development
@@ -10,10 +10,13 @@ This web app uses HTML, CSS, and JS, built on the bootstrap framework. PHP is us
 ## Features
 
 -Google Maps API
+
 -Slicknav (Responsive menu plugin)
+
 -Bootstrap framework
+
 -MySQL DB
 
 ## Authors
 
-* **Matt Tarter** - *All work (design, development, content, etc) * - [mjtarter.com](http://www.mjtarter.com)
+* **Matt Tarter** - *All work (design, development, content, etc)* - [mjtarter.com](http://www.mjtarter.com)
